@@ -1,0 +1,73 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    color:white;
+}
+
+body{
+    background-color: #63d471;
+    background-image: repeating-linear-gradient(330deg, #63d471 0%, #233329 74%);   
+}
+
+.card {  
+    background-image: linear-gradient(315deg, #63d471 0%, #233329 74%);
+}
+
+.nav-pills > li a {
+    color: #ffffff;
+}
+
+.nav-pills > li > a:hover {
+    color: #ffffff !important;
+}
+
+.nav-pills > li > a.active  {
+    color: #ffffff;
+    background-color: #0f0f0f !important;
+}
+
+.container {
+    min-height: 95vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-buttons li{
+   list-style-type: none;
+}
+
+.other-buttons {
+    margin-top: 5px;
+}
+
+.avatar {
+    vertical-align: middle;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.wave {
+    animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */
+    animation-duration: 2.5s;        /* Change to speed up or slow down */
+    animation-iteration-count: infinite;  /* Never stop waving */
+    transform-origin: 70% 70%;       /* Pivot around the bottom-left palm */
+    display: inline-block;
+  }
+  
+  @keyframes wave-animation {
+      0% { transform: rotate( 0.0deg) }
+     10% { transform: rotate(14.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
+     20% { transform: rotate(-8.0deg) }
+     30% { transform: rotate(14.0deg) }
+     40% { transform: rotate(-4.0deg) }
+     50% { transform: rotate(10.0deg) }
+     60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
+    100% { transform: rotate( 0.0deg) }
+  }
+
+  .modal-body p,.modal-header h5 {
+      color:#000000 !important;
+  }
+  

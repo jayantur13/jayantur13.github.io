@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+  <meta name="viewport" content="width=device-width" />
+  <link rel="icon" type="image/x-icon" href="res/fav.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Welcome!</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="card" style="width:400px;">
+      <ul class="nav nav-pills mb-2" id="pills-tab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <a class="nav-link active" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
+            type="button" role="tab" aria-controls="pills-profile" aria-selected="true">Profile</a>
+        </li>
+        <li class="nav-item" role="presentation">
+          <a class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button"
+            role="tab" aria-controls="pills-contact" aria-selected="false">Contact</a>
+        </li>
+      </ul>
+      <div class="tab-content" id="pills-tabContent">
+        <div class="tab-pane fade show active" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+          <img class="img-fluid avatar mx-auto d-block" src="res/dev.jpg" alt="dev">
+          <div class="card-body text-center">
+            <h4 class="card-title ">Jayant Navrange</h4>
+            <pre class="card-text" style="font-weight: bold;">Gamer, developer, student & poet.</pre>
+            <div class="row">
+              <div class="col-md-12">
+                <a href="https://github.com/jayantur13" class="btn btn-dark"
+                  style="font-size:15px; text-decoration: none; cursor: pointer;"><i class="fab fa-github"></i>
+                  Github</a>
+              </div>
+            </div>
+            <div class="other-buttons">
+              <a href="https://in.linkedin.com/in/jayant-navrange-238aa5138" class="btn btn-dark"
+                style="font-size:15px; text-decoration: none; cursor: pointer;"><i class="fab fa-linkedin-in"></i>
+                Linkedin</a>
+              <a href="/#" data-bs-toggle="modal" data-bs-target="#myModal" class="btn btn-dark cv"
+                style="font-size:15px; text-decoration: none; cursor: pointer;"><i class="fas fa-download"></i> Download
+                CV</a>
+            </div>
+          </div>
+          <div class="card-footer">
+            <h5 class="text-center" style="margin-top: 10px;font-weight: lighter;"> <span class="wave">👋</span> See you
+              around!</h5>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+          <div class="card-body">
+            <form action="https://formsubmit.io/send/c7e95607-597c-4bf4-b9ff-a3de94d2c371" method="post">
+              <input name="_formsubmit_id" type="text" style="display:none">
+              <input name="_redirect" type="hidden" id="name" value="https://jayantur13.github.io/thankyou.html">
+              <div class="mb-3 mt-3">
+                <label for="email" class="form-label">Email:</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter your email" name="email"
+                  required>
+              </div>
+              <div class="mb-3">
+                <label for="msg" class="form-label">Message:</label>
+                <textarea class="form-control" id="comment" placeholder="Enter your message" name="comment"
+                  required></textarea>
+              </div>
+              <button type="submit" class="btn btn-dark">Send</button>
+            </form>
+          </div>
+          <div class="card-footer">
+            <h5 class="text-center" style="margin-top: 10px;font-weight: lighter;"> <span class="wave">👋</span> See you
+              around!</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--Modal for CV !-->
+  <div class="modal" tabindex="-1" id="myModal">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Attention!</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>CV is password protected,please contact @dev</p>
+        </div>
+        <div class="modal-footer">
+          <a href="/#" class="btn btn-secondary" data-bs-dismiss="modal">Close</a>
+          <a href="res/cv.pdf" class="btn btn-dark">Got password ? Download</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
